@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preventRightClick</title>
+</head>
+<body>
+    <button id="myButton">disabled this button</button>
+    <script>
+        const button = document.getElementById('myButton')
+        button.addEventListener("contextmenu",()=>{
+            event.preventDefault()
+            alert('this button remove use of right click')
+        })
+    </script>
+</body>
+</html>

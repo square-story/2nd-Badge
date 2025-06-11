@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Button</title>
+</head>
+<body>
+    <input type="checkbox" id="myCheckBox">
+    <button id="myButton">toggle the checkbox</button>
+    <script>
+        let checkBox = document.getElementById('myCheckBox')
+        let button = document.getElementById('myButton')
+        button.addEventListener("click",()=>{
+            checkBox.checked = !checkBox.checked
+        })
+    </script>
+</body>
+</html>
